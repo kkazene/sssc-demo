@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: deploy-demo-dev
+spec:
+  template:
+    spec:
+      containers:
+      - name: my-app-image
+        image: us-central1-docker.pkg.dev/tuulis-733-20240911132108/sds-demo/demo
