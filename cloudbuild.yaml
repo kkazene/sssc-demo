@@ -53,12 +53,12 @@ steps:
      args :
      - -c
      - |
-       gcloud deploy releases create test-release-5 --project=$_PROJECT_ID   --region=us-central1   --delivery-pipeline=$_PIPELINE_ID          
+       gcloud deploy releases create test-release-6 --project=$_PROJECT_ID   --region=us-central1   --delivery-pipeline=$_PIPELINE_ID          
 images: [$_IMAGE]
 
 
 substitutions:
-  _SEVERITY: "CRITICAL"
+  _SEVERITY: "CRITICAL|HIGH"
 
 options:
   dynamic_substitutions: true
