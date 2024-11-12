@@ -58,7 +58,7 @@ images: [$_IMAGE]
 
 
 substitutions:
-  _SEVERITY: "CRITICAL|HIGH"
+  _SEVERITY: '"CRITICAL|HIGH"'
 
 options:
   dynamic_substitutions: true
